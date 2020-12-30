@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>    
+    <script>
+      function result() {
+        //alert("Form - Handler working file...");
+         var name=document.getElementById('one').value;
+         var email=document.getElementById('two').value;
+         var password=document.getElementById('three').value;
+         document.write("<h3>Here is your data:</h3>");
+         document.write(name + "<br/>");
+         document.write(email + "<br/>");
+         document.write(password + "<br/>");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form onsubmit="return result();">
+            <div class="form-group">
+              <input type="text" class="form-control" id="one" placeholder="User Name" />
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="two" placeholder="Email" type="email" />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control" id="three"
+                placeholder="Password"
+                type="password"
+              />
+            </div>
+            <button class="btn btn-success">Signup</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
